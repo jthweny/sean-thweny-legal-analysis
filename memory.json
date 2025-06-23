@@ -323,6 +323,160 @@
       ],
       "created": "2025-06-23T10:16:12.862714",
       "updated": "2025-06-23T10:16:12.862720"
+    },
+    {
+      "name": "Document_95656d92",
+      "entityType": "Document",
+      "observations": [
+        "Confidence: 1.0",
+        "Source: unknown",
+        "Context: Source document for analysis"
+      ],
+      "created": "2025-06-23T13:32:54.881249",
+      "updated": "2025-06-23T13:34:10.991504"
+    },
+    {
+      "name": "Estate",
+      "entityType": "Legal_Concept",
+      "observations": [
+        "Confidence: 0.9",
+        "Source: unknown",
+        "Context: Legal term appearing 6 times"
+      ],
+      "created": "2025-06-23T13:33:15.449473",
+      "updated": "2025-06-23T13:33:55.963803"
+    },
+    {
+      "name": "Administration",
+      "entityType": "Legal_Concept",
+      "observations": [
+        "Confidence: 0.9",
+        "Source: unknown",
+        "Context: Legal term appearing 3 times"
+      ],
+      "created": "2025-06-23T13:33:15.450873",
+      "updated": "2025-06-23T13:33:55.966994"
+    },
+    {
+      "name": "Will",
+      "entityType": "Legal_Concept",
+      "observations": [
+        "Confidence: 0.9",
+        "Source: unknown",
+        "Context: Legal term appearing 208 times"
+      ],
+      "created": "2025-06-23T13:33:15.453028",
+      "updated": "2025-06-23T13:33:55.968530"
+    },
+    {
+      "name": "Document_99674977",
+      "entityType": "Document",
+      "observations": [
+        "Confidence: 1.0",
+        "Source: unknown",
+        "Context: Source document for analysis"
+      ],
+      "created": "2025-06-23T13:33:15.454611",
+      "updated": "2025-06-23T13:33:50.928504"
+    },
+    {
+      "name": "Nadia",
+      "entityType": "Person",
+      "observations": [
+        "Confidence: 0.8",
+        "Source: unknown",
+        "Context: Found in 942 locations"
+      ],
+      "created": "2025-06-23T13:33:45.903067",
+      "updated": "2025-06-23T13:33:55.955677"
+    },
+    {
+      "name": "Sean",
+      "entityType": "Person",
+      "observations": [
+        "Confidence: 0.8",
+        "Source: unknown",
+        "Context: Found in 15 locations"
+      ],
+      "created": "2025-06-23T13:33:45.905198",
+      "updated": "2025-06-23T13:33:55.957229"
+    },
+    {
+      "name": "Thweny",
+      "entityType": "Person",
+      "observations": [
+        "Confidence: 0.8",
+        "Source: unknown",
+        "Context: Found in 1585 locations"
+      ],
+      "created": "2025-06-23T13:33:45.907758",
+      "updated": "2025-06-23T13:33:55.959014"
+    },
+    {
+      "name": "Solicitor",
+      "entityType": "Person",
+      "observations": [
+        "Confidence: 0.8",
+        "Source: unknown",
+        "Context: Found in 39 locations"
+      ],
+      "created": "2025-06-23T13:33:45.910047",
+      "updated": "2025-06-23T13:33:55.960582"
+    },
+    {
+      "name": "Probate",
+      "entityType": "Legal_Concept",
+      "observations": [
+        "Confidence: 0.9",
+        "Source: unknown",
+        "Context: Legal term appearing 10 times"
+      ],
+      "created": "2025-06-23T13:33:45.914488",
+      "updated": "2025-06-23T13:33:55.965353"
+    },
+    {
+      "name": "Document_d519da42",
+      "entityType": "Document",
+      "observations": [
+        "Confidence: 1.0",
+        "Source: unknown",
+        "Context: Source document for analysis"
+      ],
+      "created": "2025-06-23T13:33:45.918966",
+      "updated": "2025-06-23T13:33:45.918973"
+    },
+    {
+      "name": "Administrator",
+      "entityType": "Person",
+      "observations": [
+        "Confidence: 0.8",
+        "Source: unknown",
+        "Context: Found in 3 locations"
+      ],
+      "created": "2025-06-23T13:33:55.962201",
+      "updated": "2025-06-23T13:33:55.962207"
+    },
+    {
+      "name": "Inheritance",
+      "entityType": "Legal_Concept",
+      "observations": [
+        "Confidence: 0.9",
+        "Source: unknown",
+        "Context: Legal term appearing 33 times"
+      ],
+      "created": "2025-06-23T13:33:55.969977",
+      "updated": "2025-06-23T13:33:55.969982"
+    },
+    {
+      "name": "Document_2a54529b",
+      "entityType": "Document",
+      "observations": [
+        "Confidence: 1.0",
+        "Source: unknown",
+        "Context: Source document for analysis"
+      ],
+      "created": "2025-06-23T13:33:55.971501",
+      "updated": "2025-06-23T13:33:55.971508"
     }
   ],
   "relations": [
@@ -665,7 +819,7 @@
   ],
   "metadata": {
     "created": "2025-06-23T08:57:56.658597",
-    "last_updated": "2025-06-23T10:16:12.870884",
+    "last_updated": "2025-06-23T13:34:10.991510",
     "version": "1.0"
   }
 }

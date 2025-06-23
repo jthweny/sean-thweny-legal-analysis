@@ -255,7 +255,7 @@ FILE CONTEXT: Processing file {i+1} of {len(files)} - {file_path.name}
 This file is part of a comprehensive case analysis involving multiple related documents.
 """
                 
-                result = await mcp_processor.process_document_with_stages(
+                result = await mcp_processor.process_document_enhanced(
                     content, enhanced_context, task_id, file_metadata
                 )
                 
@@ -381,7 +381,7 @@ async def process_enhanced_document(request: EnhancedDocumentAnalysisRequest):
         
         # Start background processing
         asyncio.create_task(
-            mcp_processor.process_document_with_stages(
+            mcp_processor.process_document_enhanced(
                 request.content, 
                 request.context, 
                 task_id
@@ -506,7 +506,7 @@ async def upload_document(
         
         # Start enhanced background processing with file metadata
         asyncio.create_task(
-            mcp_processor.process_document_with_stages(
+            mcp_processor.process_document_enhanced(
                 file_content, 
                 context, 
                 task_id,
