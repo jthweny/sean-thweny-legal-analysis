@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Analysis System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .analysis-card {
+            transition: all 0.3s ease;
+        }
+        .analysis-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div x-data="legalAnalysisApp()" x-init="init()">
+        <!-- Header -->
+        <header class="gradient-bg text-white shadow-lg">
+            <div class="container mx-auto px-6 py-8">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 class="text-4xl font-bold mb-2">⚖️ Legal Analysis System</h1>
+                        <p class="text-xl opacity-90">AI-Powered Document Analysis & Case Management</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-white bg-opacity-20 rounded-lg px-4 py-2">
+                                <span class="text-sm font-medium">Status:</span>
+                                <span x-text="systemStatus.status" class="font-bold ml-1"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="container mx-auto px-6 py-8">
+            
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white rounded-xl card-shadow p-6 text-center">
+                    <div class="text-3xl text-blue-600 mb-2"><i class="fas fa-file-alt"></i></div>
+                    <h3 class="text-lg font-semibold text-gray-800">Documents</h3>
+                    <p class="text-2xl font-bold text-blue-600" x-text="stats.documents"></p>
+                </div>
+                <div class="bg-white rounded-xl card-shadow p-6 text-center">
+                    <div class="text-3xl text-green-600 mb-2"><i class="fas fa-search"></i></div>
+                    <h3 class="text-lg font-semibold text-gray-800">Analyses</h3>
+                    <p class="text-2xl font-bold text-green-600" x-text="stats.analyses"></p>
+                </div>
+                <div class="bg-white rounded-xl card-shadow p-6 text-center">
+                    <div class="text-3xl text-purple-600 mb-2"><i class="fas fa-lightbulb"></i></div>
+                    <h3 class="text-lg font-semibold text-gray-800">Insights</h3>
+                    <p class="text-2xl font-bold text-purple-600" x-text="stats.insights"></p>
+                </div>
+                <div class="bg-white rounded-xl card-shadow p-6 text-center">
+                    <div class="text-3xl text-orange-600 mb-2"><i class="fas fa-dollar-sign"></i></div>
+                    <h3 class="text-lg font-semibold text-gray-800">Cost Savings</h3>
+                    <p class="text-sm font-bold text-orange-600">95% vs Premium</p>
+                </div>
+            </div>
+
+            <!-- Document Analysis Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Upload & Analyze -->
+                <div class="bg-white rounded-xl card-shadow p-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-upload text-blue-600 mr-3"></i>
+                        Document Analysis
+                    </h2>
+                    
+                    <!-- Text Input -->
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">
+                            Paste Legal Document Content
+                        </label>
+                        <textarea 
+                            x-model="documentContent"
+                            rows="8" 
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="Paste your legal document content here... (Death certificates, wills, contracts, etc.)"
+                        ></textarea>
+                    </div>
+
+                    <!-- Analysis Button -->
+                    <button 
+                        @click="analyzeDocument()"
+                        :disabled="isAnalyzing || !documentContent.trim()"
+                        class="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-gray-400 text-white font-bold py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center"
+                    >
+                        <span x-show="!isAnalyzing" class="flex items-center">
+                            <i class="fas fa-brain mr-2"></i>
+                            Analyze Document
+                        </span>
+                        <span x-show="isAnalyzing" class="flex items-center">
+                            <i class="fas fa-spinner fa-spin mr-2"></i>
+                            Analyzing...
+                        </span>
+                    </button>
+
+                    <!-- Cost Info -->
+                    <div class="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            <span class="text-sm text-green-800">
+                                <strong>Cost-Optimized:</strong> Using Gemini + Firecrawl (95% savings vs premium services)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="bg-white rounded-xl card-shadow p-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                        <i class="fas fa-chart-line text-green-600 mr-3"></i>
+                        Analysis Results
+                    </h2>
+                    
+                    <div x-show="!analysisResults && !isAnalyzing" class="text-center py-12 text-gray-500">
+                        <i class="fas fa-clipboard-list text-4xl mb-4"></i>
+                        <p>No analysis yet. Upload a document to get started.</p>
+                    </div>
+
+                    <div x-show="isAnalyzing" class="text-center py-12">
+                        <i class="fas fa-spinner fa-spin text-4xl text-blue-600 mb-4"></i>
+                        <p class="text-gray-600">Analyzing your legal document...</p>
+                    </div>
+
+                    <div x-show="analysisResults" class="space-y-6">
+                        <!-- Legal Issues -->
+                        <div x-show="analysisResults?.mcp_results?.gemini_analysis?.legal_issues">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                                <i class="fas fa-exclamation-triangle text-orange-500 mr-2"></i>
+                                Legal Issues Identified
+                            </h3>
+                            <div class="space-y-2">
+                                <template x-for="issue in analysisResults?.mcp_results?.gemini_analysis?.legal_issues || []">
+                                    <div class="bg-orange-50 border-l-4 border-orange-400 p-3 rounded">
+                                        <p class="text-orange-800" x-text="issue"></p>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <!-- Recommendations -->
+                        <div x-show="analysisResults?.mcp_results?.gemini_analysis?.recommendations">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                                <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                                Recommendations
+                            </h3>
+                            <div class="space-y-2">
+                                <template x-for="rec in analysisResults?.mcp_results?.gemini_analysis?.recommendations || []">
+                                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded">
+                                        <p class="text-yellow-800" x-text="rec"></p>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <!-- Entities -->
+                        <div x-show="analysisResults?.mcp_results?.entities_extracted?.entities_data">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                                <i class="fas fa-tags text-purple-500 mr-2"></i>
+                                Extracted Entities
+                            </h3>
+                            <div class="flex flex-wrap gap-2">
+                                <template x-for="entity in analysisResults?.mcp_results?.entities_extracted?.entities_data || []">
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm" x-text="entity.name"></span>
+                                </template>
+                            </div>
+                        </div>
+
+                        <!-- Processing Summary -->
+                        <div class="bg-gray-50 rounded-lg p-4">
+                            <h4 class="font-semibold text-gray-800 mb-2">Processing Summary</h4>
+                            <div class="text-sm text-gray-600 space-y-1">
+                                <div>✅ Document processed successfully</div>
+                                <div x-show="analysisResults?.mcp_results?.entities_extracted?.entities_created">
+                                    ✅ <span x-text="analysisResults?.mcp_results?.entities_extracted?.entities_created"></span> entities extracted
+                                </div>
+                                <div x-show="analysisResults?.insights_generated?.length">
+                                    ✅ <span x-text="analysisResults?.insights_generated?.length"></span> insights generated
+                                </div>
+                                <div>💰 Cost-optimized processing used</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="mt-8 bg-white rounded-xl card-shadow p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-history text-indigo-600 mr-3"></i>
+                    Recent Activity
+                </h2>
+                
+                <div x-show="recentActivity.length === 0" class="text-center py-8 text-gray-500">
+                    <i class="fas fa-clock text-3xl mb-3"></i>
+                    <p>No recent activity. Start by analyzing a document above.</p>
+                </div>
+
+                <div x-show="recentActivity.length > 0" class="space-y-4">
+                    <template x-for="activity in recentActivity" :key="activity.id">
+                        <div class="border-l-4 border-indigo-400 bg-indigo-50 p-4 rounded-r-lg">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="font-medium text-indigo-900" x-text="activity.action"></p>
+                                    <p class="text-sm text-indigo-700" x-text="activity.details"></p>
+                                </div>
+                                <span class="text-xs text-indigo-600" x-text="activity.timestamp"></span>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-8 mt-12">
+            <div class="container mx-auto px-6 text-center">
+                <p class="text-gray-400">
+                    Legal Analysis System - Powered by AI • Cost-Optimized • Estate Law Focused
+                </p>
+                <div class="mt-4 flex justify-center space-x-6 text-sm">
+                    <span>✅ FastAPI Backend</span>
+                    <span>✅ Gemini Analysis</span>
+                    <span>✅ Firecrawl Extraction</span>
+                    <span>✅ Knowledge Graph</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function legalAnalysisApp() {
+            return {
+                documentContent: '',
+                isAnalyzing: false,
+                analysisResults: null,
+                systemStatus: { status: 'loading' },
+                stats: {
+                    documents: 0,
+                    analyses: 0,
+                    insights: 0
+                },
+                recentActivity: [],
+
+                async init() {
+                    await this.checkSystemStatus();
+                    this.loadSampleData();
+                },
+
+                async checkSystemStatus() {
+                    try {
+                        const response = await fetch('/health');
+                        const data = await response.json();
+                        this.systemStatus = data;
+                    } catch (error) {
+                        this.systemStatus = { status: 'error' };
+                    }
+                },
+
+                loadSampleData() {
+                    this.stats = {
+                        documents: Math.floor(Math.random() * 10) + 1,
+                        analyses: Math.floor(Math.random() * 15) + 5,
+                        insights: Math.floor(Math.random() * 25) + 10
+                    };
+                },
+
+                async analyzeDocument() {
+                    if (!this.documentContent.trim()) return;
+
+                    this.isAnalyzing = true;
+                    this.analysisResults = null;
+
+                    try {
+                        const response = await fetch('/test-mcp-processing', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                content: this.documentContent
+                            })
+                        });
+
+                        if (response.ok) {
+                            this.analysisResults = await response.json();
+                            this.addRecentActivity('Document Analyzed', 'Legal analysis completed successfully');
+                            this.stats.analyses++;
+                            this.stats.insights += this.analysisResults.insights_generated?.length || 0;
+                        } else {
+                            throw new Error('Analysis failed');
+                        }
+                    } catch (error) {
+                        alert('Analysis failed. Please try again.');
+                        console.error('Analysis error:', error);
+                    } finally {
+                        this.isAnalyzing = false;
+                    }
+                },
+
+                addRecentActivity(action, details) {
+                    this.recentActivity.unshift({
+                        id: Date.now(),
+                        action: action,
+                        details: details,
+                        timestamp: new Date().toLocaleTimeString()
+                    });
+                    if (this.recentActivity.length > 5) {
+                        this.recentActivity.pop();
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

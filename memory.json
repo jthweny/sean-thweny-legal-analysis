@@ -1,0 +1,671 @@
+{
+  "entities": [
+    {
+      "name": "Sean_Thweny",
+      "entityType": "person",
+      "observations": [
+        "Mentioned in legal document",
+        "Related to estate administration"
+      ],
+      "created": "2025-06-23T08:58:23.534664",
+      "updated": "2025-06-23T10:16:12.857918"
+    },
+    {
+      "name": "Estate_Administrator",
+      "entityType": "person",
+      "observations": [
+        "Mentioned in legal document",
+        "Related to estate administration"
+      ],
+      "created": "2025-06-23T08:58:23.535227",
+      "updated": "2025-06-23T10:16:12.859365"
+    },
+    {
+      "name": "General_Hospital",
+      "entityType": "location",
+      "observations": [
+        "Location mentioned in legal document",
+        "Relevant to case proceedings"
+      ],
+      "created": "2025-06-23T08:58:23.536139",
+      "updated": "2025-06-23T10:16:12.861174"
+    },
+    {
+      "name": "Case_20250623_085823",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium"
+      ],
+      "created": "2025-06-23T08:58:23.536797",
+      "updated": "2025-06-23T08:58:23.536802"
+    },
+    {
+      "name": "Case_20250623_085842",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium"
+      ],
+      "created": "2025-06-23T08:58:42.907908",
+      "updated": "2025-06-23T08:58:42.907913"
+    },
+    {
+      "name": "Case_20250623_092137",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: test_death_certificate.txt",
+        "File type: .txt",
+        "Upload date: 2025-06-23T09:21:25.259314"
+      ],
+      "created": "2025-06-23T09:21:37.865597",
+      "updated": "2025-06-23T09:21:37.865603"
+    },
+    {
+      "name": "Document_test_death_certificate_txt",
+      "entityType": "document",
+      "observations": [
+        "Original filename: test_death_certificate.txt",
+        "File size: 356 bytes",
+        "Extension: .txt",
+        "Upload timestamp: 2025-06-23T09:21:25.259314",
+        "Content length: 356 characters"
+      ],
+      "created": "2025-06-23T09:21:37.866285",
+      "updated": "2025-06-23T09:21:37.866291"
+    },
+    {
+      "name": "Case_20250623_093149",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: REFINED_COMPREHENSIVE_LEGAL_ANALYSIS (1).pdf",
+        "File type: .pdf",
+        "Upload date: 2025-06-23T09:31:36.480062"
+      ],
+      "created": "2025-06-23T09:31:49.083460",
+      "updated": "2025-06-23T09:31:49.083465"
+    },
+    {
+      "name": "Document_REFINED_COMPREHENSIVE_LEGAL_ANALYSIS_(1)_pdf",
+      "entityType": "document",
+      "observations": [
+        "Original filename: REFINED_COMPREHENSIVE_LEGAL_ANALYSIS (1).pdf",
+        "File size: 86280 bytes",
+        "Extension: .pdf",
+        "Upload timestamp: 2025-06-23T09:31:36.480062",
+        "Content length: 171 characters"
+      ],
+      "created": "2025-06-23T09:31:49.084275",
+      "updated": "2025-06-23T09:31:49.084281"
+    },
+    {
+      "name": "Case_20250623_093218",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: nadia audio+text timeline format.txt",
+        "File type: .txt",
+        "Upload date: 2025-06-23T09:32:06.233313"
+      ],
+      "created": "2025-06-23T09:32:18.794585",
+      "updated": "2025-06-23T09:32:18.838817"
+    },
+    {
+      "name": "Document_death_certificate_sean_thweny_pdf",
+      "entityType": "document",
+      "observations": [
+        "Original filename: death_certificate_sean_thweny.pdf",
+        "File size: 1495974 bytes",
+        "Extension: .pdf",
+        "Upload timestamp: 2025-06-23T09:45:59.115042",
+        "Content length: 160 characters"
+      ],
+      "created": "2025-06-23T09:32:18.795461",
+      "updated": "2025-06-23T09:46:11.719700"
+    },
+    {
+      "name": "Document_letter_of_admin_13th_may_pdf",
+      "entityType": "document",
+      "observations": [
+        "Original filename: letter of admin 13th may.pdf",
+        "File size: 345917 bytes",
+        "Extension: .pdf",
+        "Upload timestamp: 2025-06-23T09:32:06.220784",
+        "Content length: 155 characters"
+      ],
+      "created": "2025-06-23T09:32:18.826776",
+      "updated": "2025-06-23T09:32:18.826782"
+    },
+    {
+      "name": "Document_nadia_audio+text_timeline_format_txt",
+      "entityType": "document",
+      "observations": [
+        "Original filename: nadia audio+text timeline format.txt",
+        "File size: 260271 bytes",
+        "Extension: .txt",
+        "Upload timestamp: 2025-06-23T09:53:04.931777",
+        "Content length: 258326 characters"
+      ],
+      "created": "2025-06-23T09:32:18.839683",
+      "updated": "2025-06-23T09:53:17.538241"
+    },
+    {
+      "name": "Case_20250623_094611",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: death_certificate_sean_thweny.pdf",
+        "File type: .pdf",
+        "Upload date: 2025-06-23T09:45:59.115042"
+      ],
+      "created": "2025-06-23T09:46:11.718531",
+      "updated": "2025-06-23T09:46:11.718537"
+    },
+    {
+      "name": "Case_20250623_095317",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: nadia audio+text timeline format.txt",
+        "File type: .txt",
+        "Upload date: 2025-06-23T09:53:04.931777"
+      ],
+      "created": "2025-06-23T09:53:17.537281",
+      "updated": "2025-06-23T09:53:17.537287"
+    },
+    {
+      "name": "Case_20250623_100844",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: emails from nadia.mbox",
+        "File type: .mbox",
+        "Upload date: 2025-06-23T10:08:31.706615"
+      ],
+      "created": "2025-06-23T10:08:44.312739",
+      "updated": "2025-06-23T10:08:44.312746"
+    },
+    {
+      "name": "Document_emails_from_nadia_mbox",
+      "entityType": "document",
+      "observations": [
+        "Original filename: emails from nadia.mbox",
+        "File size: 1751066 bytes",
+        "Extension: .mbox",
+        "Upload timestamp: 2025-06-23T10:08:31.706615",
+        "Content length: 1751066 characters"
+      ],
+      "created": "2025-06-23T10:08:44.313703",
+      "updated": "2025-06-23T10:08:44.313709"
+    },
+    {
+      "name": "Case_20250623_101214",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: 20250623_100831_emails from nadia.mbox",
+        "File type: .mbox",
+        "Upload date: 2025-06-23T10:08:31.702766"
+      ],
+      "created": "2025-06-23T10:12:14.385110",
+      "updated": "2025-06-23T10:12:14.385116"
+    },
+    {
+      "name": "Document_20250623_100831_emails_from_nadia_mbox",
+      "entityType": "document",
+      "observations": [
+        "Original filename: 20250623_100831_emails from nadia.mbox",
+        "File size: 1751066 bytes",
+        "Extension: .mbox",
+        "Upload timestamp: 2025-06-23T10:08:31.702766",
+        "Content length: 1728189 characters"
+      ],
+      "created": "2025-06-23T10:12:14.386344",
+      "updated": "2025-06-23T10:15:50.536283"
+    },
+    {
+      "name": "Case_20250623_101236",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: 20250623_093206_nadia audio+text timeline format.txt",
+        "File type: .txt",
+        "Upload date: 2025-06-23T09:32:06.231746"
+      ],
+      "created": "2025-06-23T10:12:36.701703",
+      "updated": "2025-06-23T10:12:36.701711"
+    },
+    {
+      "name": "Document_20250623_093206_nadia_audio+text_timeline_format_txt",
+      "entityType": "document",
+      "observations": [
+        "Original filename: 20250623_093206_nadia audio+text timeline format.txt",
+        "File size: 260271 bytes",
+        "Extension: .txt",
+        "Upload timestamp: 2025-06-23T09:32:06.231746",
+        "Content length: 258326 characters"
+      ],
+      "created": "2025-06-23T10:12:36.704066",
+      "updated": "2025-06-23T10:16:12.864441"
+    },
+    {
+      "name": "Case_20250623_101432",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: 20250623_100831_emails from nadia.mbox",
+        "File type: .mbox",
+        "Upload date: 2025-06-23T10:08:31.702766"
+      ],
+      "created": "2025-06-23T10:14:32.689399",
+      "updated": "2025-06-23T10:14:32.689408"
+    },
+    {
+      "name": "Case_20250623_101455",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: 20250623_093206_nadia audio+text timeline format.txt",
+        "File type: .txt",
+        "Upload date: 2025-06-23T09:32:06.231746"
+      ],
+      "created": "2025-06-23T10:14:55.014166",
+      "updated": "2025-06-23T10:14:55.014172"
+    },
+    {
+      "name": "Case_20250623_101550",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: 20250623_100831_emails from nadia.mbox",
+        "File type: .mbox",
+        "Upload date: 2025-06-23T10:08:31.702766"
+      ],
+      "created": "2025-06-23T10:15:50.534550",
+      "updated": "2025-06-23T10:15:50.534556"
+    },
+    {
+      "name": "Case_20250623_101612",
+      "entityType": "legal_case",
+      "observations": [
+        "Legal areas: Estate Law, Property Rights, Family Law",
+        "Case complexity: 0.7",
+        "Urgency level: medium",
+        "Source file: 20250623_093206_nadia audio+text timeline format.txt",
+        "File type: .txt",
+        "Upload date: 2025-06-23T09:32:06.231746"
+      ],
+      "created": "2025-06-23T10:16:12.862714",
+      "updated": "2025-06-23T10:16:12.862720"
+    }
+  ],
+  "relations": [
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_085823",
+      "relationType": "involved_in",
+      "created": "2025-06-23T08:58:23.537397"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_085823",
+      "relationType": "involved_in",
+      "created": "2025-06-23T08:58:23.538169"
+    },
+    {
+      "from": "Case_20250623_085823",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T08:58:23.538777"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_085842",
+      "relationType": "involved_in",
+      "created": "2025-06-23T08:58:42.908718"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_085842",
+      "relationType": "involved_in",
+      "created": "2025-06-23T08:58:42.909203"
+    },
+    {
+      "from": "Case_20250623_085842",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T08:58:42.909717"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_092137",
+      "relationType": "involved_in",
+      "created": "2025-06-23T09:21:37.867128"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_092137",
+      "relationType": "involved_in",
+      "created": "2025-06-23T09:21:37.867877"
+    },
+    {
+      "from": "Case_20250623_092137",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T09:21:37.868569"
+    },
+    {
+      "from": "Document_test_death_certificate_txt",
+      "to": "Case_20250623_092137",
+      "relationType": "supports",
+      "created": "2025-06-23T09:21:37.869168"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_093149",
+      "relationType": "involved_in",
+      "created": "2025-06-23T09:31:49.084991"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_093149",
+      "relationType": "involved_in",
+      "created": "2025-06-23T09:31:49.085745"
+    },
+    {
+      "from": "Case_20250623_093149",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T09:31:49.086650"
+    },
+    {
+      "from": "Document_REFINED_COMPREHENSIVE_LEGAL_ANALYSIS_(1)_pdf",
+      "to": "Case_20250623_093149",
+      "relationType": "supports",
+      "created": "2025-06-23T09:31:49.087579"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_093218",
+      "relationType": "involved_in",
+      "created": "2025-06-23T09:32:18.796267"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_093218",
+      "relationType": "involved_in",
+      "created": "2025-06-23T09:32:18.797261"
+    },
+    {
+      "from": "Case_20250623_093218",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T09:32:18.798050"
+    },
+    {
+      "from": "Document_death_certificate_sean_thweny_pdf",
+      "to": "Case_20250623_093218",
+      "relationType": "supports",
+      "created": "2025-06-23T09:32:18.798891"
+    },
+    {
+      "from": "Document_letter_of_admin_13th_may_pdf",
+      "to": "Case_20250623_093218",
+      "relationType": "supports",
+      "created": "2025-06-23T09:32:18.828011"
+    },
+    {
+      "from": "Document_nadia_audio+text_timeline_format_txt",
+      "to": "Case_20250623_093218",
+      "relationType": "supports",
+      "created": "2025-06-23T09:32:18.841052"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_094611",
+      "relationType": "involved_in",
+      "created": "2025-06-23T09:46:11.720635"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_094611",
+      "relationType": "involved_in",
+      "created": "2025-06-23T09:46:11.721608"
+    },
+    {
+      "from": "Case_20250623_094611",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T09:46:11.722524"
+    },
+    {
+      "from": "Document_death_certificate_sean_thweny_pdf",
+      "to": "Case_20250623_094611",
+      "relationType": "supports",
+      "created": "2025-06-23T09:46:11.723441"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_095317",
+      "relationType": "involved_in",
+      "created": "2025-06-23T09:53:17.539312"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_095317",
+      "relationType": "involved_in",
+      "created": "2025-06-23T09:53:17.540349"
+    },
+    {
+      "from": "Case_20250623_095317",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T09:53:17.541682"
+    },
+    {
+      "from": "Document_nadia_audio+text_timeline_format_txt",
+      "to": "Case_20250623_095317",
+      "relationType": "supports",
+      "created": "2025-06-23T09:53:17.542873"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_100844",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:08:44.314896"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_100844",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:08:44.316222"
+    },
+    {
+      "from": "Case_20250623_100844",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T10:08:44.317647"
+    },
+    {
+      "from": "Document_emails_from_nadia_mbox",
+      "to": "Case_20250623_100844",
+      "relationType": "supports",
+      "created": "2025-06-23T10:08:44.319208"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_101214",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:12:14.387651"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_101214",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:12:14.388834"
+    },
+    {
+      "from": "Case_20250623_101214",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T10:12:14.390034"
+    },
+    {
+      "from": "Document_20250623_100831_emails_from_nadia_mbox",
+      "to": "Case_20250623_101214",
+      "relationType": "supports",
+      "created": "2025-06-23T10:12:14.391226"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_101236",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:12:36.706551"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_101236",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:12:36.709045"
+    },
+    {
+      "from": "Case_20250623_101236",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T10:12:36.711040"
+    },
+    {
+      "from": "Document_20250623_093206_nadia_audio+text_timeline_format_txt",
+      "to": "Case_20250623_101236",
+      "relationType": "supports",
+      "created": "2025-06-23T10:12:36.712994"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_101432",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:14:32.695269"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_101432",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:14:32.697531"
+    },
+    {
+      "from": "Case_20250623_101432",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T10:14:32.700679"
+    },
+    {
+      "from": "Document_20250623_100831_emails_from_nadia_mbox",
+      "to": "Case_20250623_101432",
+      "relationType": "supports",
+      "created": "2025-06-23T10:14:32.703352"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_101455",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:14:55.017399"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_101455",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:14:55.018933"
+    },
+    {
+      "from": "Case_20250623_101455",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T10:14:55.020382"
+    },
+    {
+      "from": "Document_20250623_093206_nadia_audio+text_timeline_format_txt",
+      "to": "Case_20250623_101455",
+      "relationType": "supports",
+      "created": "2025-06-23T10:14:55.021953"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_101550",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:15:50.538220"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_101550",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:15:50.540022"
+    },
+    {
+      "from": "Case_20250623_101550",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T10:15:50.541803"
+    },
+    {
+      "from": "Document_20250623_100831_emails_from_nadia_mbox",
+      "to": "Case_20250623_101550",
+      "relationType": "supports",
+      "created": "2025-06-23T10:15:50.543511"
+    },
+    {
+      "from": "Sean_Thweny",
+      "to": "Case_20250623_101612",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:16:12.865918"
+    },
+    {
+      "from": "Estate_Administrator",
+      "to": "Case_20250623_101612",
+      "relationType": "involved_in",
+      "created": "2025-06-23T10:16:12.867752"
+    },
+    {
+      "from": "Case_20250623_101612",
+      "to": "General_Hospital",
+      "relationType": "occurred_at",
+      "created": "2025-06-23T10:16:12.869232"
+    },
+    {
+      "from": "Document_20250623_093206_nadia_audio+text_timeline_format_txt",
+      "to": "Case_20250623_101612",
+      "relationType": "supports",
+      "created": "2025-06-23T10:16:12.870875"
+    }
+  ],
+  "metadata": {
+    "created": "2025-06-23T08:57:56.658597",
+    "last_updated": "2025-06-23T10:16:12.870884",
+    "version": "1.0"
+  }
+}

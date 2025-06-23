@@ -1,0 +1,157 @@
+# FastAPI AI Legal Analysis System - Requirements
+
+# ============================================================================
+# WEB FRAMEWORK & API
+# ============================================================================
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+httpx>=0.25.0
+python-multipart>=0.0.6  # For file uploads
+
+# ============================================================================
+# CONFIGURATION & ENVIRONMENT
+# ============================================================================
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+python-dotenv>=1.0.0
+
+# ============================================================================
+# DATABASE & ASYNC
+# ============================================================================
+asyncpg>=0.29.0
+sqlalchemy[asyncio]>=2.0.23
+alembic>=1.13.0
+
+# ============================================================================
+# REDIS & CACHING
+# ============================================================================
+redis>=5.0.0
+aioredis>=2.0.1
+
+# ============================================================================
+# BACKGROUND TASKS
+# ============================================================================
+celery>=5.3.0
+kombu>=5.3.0
+
+# ============================================================================
+# AI & LLM APIs
+# ============================================================================
+openai>=1.3.0
+anthropic>=0.8.0
+google-generativeai>=0.3.0
+
+# ============================================================================
+# WEB SCRAPING & CONTENT EXTRACTION
+# ============================================================================
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+python-magic>=0.4.27  # File type detection
+pypdf>=3.17.0  # PDF processing
+python-docx>=1.1.0  # DOCX processing
+
+# ============================================================================
+# DATA PROCESSING & ANALYSIS
+# ============================================================================
+pandas>=2.1.0
+numpy>=1.24.0
+textstat>=0.7.3  # Text statistics
+
+# ============================================================================
+# MONITORING & LOGGING
+# ============================================================================
+prometheus-client>=0.19.0
+structlog>=23.2.0
+sentry-sdk[fastapi]>=1.38.0
+
+# ============================================================================
+# ERROR HANDLING & RETRIES
+# ============================================================================
+tenacity>=8.2.0
+circuit-breaker>=1.4.0
+
+# ============================================================================
+# SECURITY & AUTHENTICATION
+# ============================================================================
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+python-multipart>=0.0.6
+
+# ============================================================================
+# TESTING & DEVELOPMENT
+# ============================================================================
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.0
+httpx>=0.25.0  # For async testing
+factory-boy>=3.3.0  # Test data factories
+
+# ============================================================================
+# CODE QUALITY & FORMATTING
+# ============================================================================
+black>=23.10.0
+isort>=5.12.0
+flake8>=6.1.0
+mypy>=1.7.0
+pre-commit>=3.5.0
+
+# ============================================================================
+# DEPLOYMENT & PRODUCTION
+# ============================================================================
+gunicorn>=21.2.0
+docker>=6.1.0
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+mkdocs>=1.5.0
+mkdocs-material>=9.4.0
+
+# ============================================================================
+# OPTIONAL: ADVANCED FEATURES
+# ============================================================================
+# Uncomment these if you want to use advanced features:
+
+# Vector databases and embeddings
+# pinecone-client>=2.2.0
+# chromadb>=0.4.0
+# sentence-transformers>=2.2.0
+
+# Advanced NLP
+# spacy>=3.7.0
+# nltk>=3.8.1
+
+# Image processing (for document scanning)
+# Pillow>=10.1.0
+# opencv-python>=4.8.0
+
+# Advanced document processing
+# unstructured>=0.11.0
+# pdfplumber>=0.10.0
+
+# Workflow orchestration
+# prefect>=2.14.0
+# apache-airflow>=2.7.0
+
+# ============================================================================
+# DEVELOPMENT NOTES
+# ============================================================================
+# 
+# To install all dependencies:
+#   pip install -r requirements.txt
+#
+# To install with development dependencies:
+#   pip install -r requirements.txt -r requirements-dev.txt
+#
+# To create a new virtual environment:
+#   python -m venv venv
+#   source venv/bin/activate  # On Windows: venv\Scripts\activate
+#   pip install -r requirements.txt
+#
+# To update dependencies:
+#   pip install --upgrade -r requirements.txt
+#
+# To freeze current versions:
+#   pip freeze > requirements-lock.txt
+#
